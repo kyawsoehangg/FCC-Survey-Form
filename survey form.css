@@ -1,0 +1,207 @@
+@import url(./trajan-pro/Trajan\ Pro.ttf);
+@import url(./trajan-pro/TrajanPro-Regular.ttf);
+
+:root {
+  --color-white: #f3f3f3;
+  --color-gray: #c2c2c5;
+  --color-darkred: rgba(78, 14, 6, 0.8);
+  --color-BB: #0c000094;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: TrajanPro-Regular;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+  color: #CAB39D;
+
+}
+
+/* mobile friendly alternative to using background-attachment: fixed */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-gray);
+  background-image: 
+    url(https://img.wallpapersafari.com/desktop/1440/900/25/79/b6rpsY.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-size: 3.3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #CAB39D;
+  text-shadow: 2px 1px 4px #b40b0b;
+  
+}
+
+p {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+}
+
+.header {
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+.description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.clue {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  color: #CAB39D;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* form */
+
+form {
+  background: var(--color-darkred);
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.7rem;
+}
+
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+  }
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group1,
+.form-group2 {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+  display: block;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.form-control {
+  display: block;
+  width: 60%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #CAB39D;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #0C0000;
+  outline: 0;
+  box-shadow: #0C0000;
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  background: #CAB39D;;
+  background-color: #CAB39D;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.input-textarea {
+  min-height: 120px;
+  background-color: #CAB39D;
+  width: 100%;
+  padding: 0.625rem;
+  border-radius: 0.5rem;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  width: 50%;
+  padding: 0.75rem;
+  background: var(--color-BB);
+  color: inherit;
+  border: 3px solid #b40b0b;
+  border-radius: 10px;
+  cursor: pointer;
+}

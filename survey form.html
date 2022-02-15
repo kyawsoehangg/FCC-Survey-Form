@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./survey form.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">DOTA 2 Player Survey Form</h1>
+          <p id="description" class="description text-center">
+            What is on your M!nD
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name<span class="clue">(In Game Name)</span></label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Age<span class="clue">(optional)</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="13"
+              max="99"
+              class="form-control"
+              placeholder="Age"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Matchmaking Rating<span class="clue">(MMR)</span></label
+            >
+            <input
+              type="number"
+              name="MMR"
+              id="number"
+              class="form-control"
+              placeholder="Show your real( Don't be shy)"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <p>Select your server region</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select your server</option>
+              <option value="America">US</option>
+              <option value="North America">Brazil</option>
+              <option value="Europe">Europe</option>
+              <option value="Asia">Asia</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+      
+          <div class="form-group1">
+            <p>what is your skill<span class="clue">(Plz justify with your MMR)</span></p>
+            <label>
+              <input
+                name="user-recommend"
+                value="World Class"
+                type="radio"
+                class="input-radio"
+                checked
+              />World Class</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="Professional"
+                type="radio"
+                class="input-radio"
+              />Professional</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="Amateur"
+                type="radio"
+                class="input-radio"
+              />Amateur</label
+            >
+            <label
+              ><input
+                name="user-recommend"
+                value="Beginner"
+                type="radio"
+                class="input-radio"
+              />Beginner</label
+            >
+          </div>
+
+
+          <div class="form-group">
+            <p>
+              What is your Rank?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Select an option</option>
+              <option value="Immortal">Immortal</option>
+              <option value="Divine">Divine</option>
+              <option value="Divine">Ancient</option>
+              <option value="Legend">Legend</option>
+              <option value="Archon">Archon</option>
+              <option value="Crusader">Crusader</option>
+              <option value="Guardian">Guardian</option>
+              <option value="Herald">Herald</option>
+            </select>
+          </div>
+      
+          <div class="form-group2">
+            <p>
+              What is your Role in Game.
+              <span class="clue">(Check your Playing Style)</span>
+            </p>
+      
+            <label
+              ><input
+                name="prefer"
+                value="Carry"
+                type="checkbox"
+                class="input-checkbox"
+              />Carry</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="Support"
+                type="checkbox"
+                class="input-checkbox"
+              />Support</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Ganker"
+                type="checkbox"
+                class="input-checkbox"
+              />Ganker</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="jungler"
+                type="checkbox"
+                class="input-checkbox"
+              />jungler</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Roamer"
+                type="checkbox"
+                class="input-checkbox"
+              />Roamer</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Pusher"
+                type="checkbox"
+                class="input-checkbox"
+              />Pusher</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Nuker"
+                type="checkbox"
+                class="input-checkbox"
+              />Nuker</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Disabler"
+                type="checkbox"
+                class="input-checkbox"
+              />Disabler</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Initiator"
+                type="checkbox"
+                class="input-checkbox"
+              />Initiator</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Durable"
+                type="checkbox"
+                class="input-checkbox"
+              />Durable</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>    
+          
+        </form>
+      </div>
+    
+
+
+</body>
+</html>
